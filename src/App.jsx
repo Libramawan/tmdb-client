@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './web/pages/Home';
@@ -9,8 +10,9 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/results/" exact component={Results} />
-        <Route path="/details/" exact component={Details} />
+        <Route path="/results" component={(props) => <Results {...props} />} />
+        {/* <Route path="/results" exact component={Results} /> */}
+        <Route path="/details/:id" component={(props) => <Details {...props} />} />
       </Switch>
     </Router>
   );
