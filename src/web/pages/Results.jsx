@@ -71,6 +71,15 @@ function Results({ match, location }) {
           <div className="flex flex-col py-12 place-items-center">
             <h2 className="text-yellow text-3xl">TV Movie Database</h2>
             <Search />
+            <div className="text-white text-xs pt-2 text-center quicksand">
+              <p>
+                Sintaks pencarian [prefix:input].
+              </p>
+              <p>
+                Prefix yang tersedia:
+                title, season, status, type, year, tag, synonym
+              </p>
+            </div>
           </div>
         </div>
       </div>

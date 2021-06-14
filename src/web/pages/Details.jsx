@@ -40,6 +40,15 @@ function Details({ match }) {
           </div>
           <div className="mx-4 md:mx-36">
             <Search />
+            <div className="text-black text-xs pt-2 quicksand">
+              <p>
+                Sintaks pencarian [prefix:input].
+              </p>
+              <p>
+                Prefix yang tersedia:
+                title, season, status, type, year, tag, synonym
+              </p>
+            </div>
 
             {detail[0] ? (
               <div className="flex flex-col sm:flex-row bg-white rounded-md quicksand border sm:border-none my-4 w-full lg:w-full">
@@ -63,7 +72,17 @@ function Details({ match }) {
                         </tr>
                         <tr>
                           <Th>Official Title</Th>
-                          <Td>{detail[0].synonyms}</Td>
+                          <Td>
+
+                            <ul>
+                              {detail[0].synonyms.map((sinonim) => (
+                                <li>
+                                  {sinonim}
+                                </li>
+                              ))}
+                            </ul>
+
+                          </Td>
                         </tr>
                         <tr>
                           <Th>Type</Th>

@@ -22,7 +22,7 @@ function Searchbar() {
           >
             <SearchIcon className="h-5 w-5" />
           </button>
-          <input type="search" name="search" onChange={handlerInput} value={search} placeholder="title:Tokyo,tags:YourGenre,..." className="border border-gray-300 bg-white h-10 pl-12 pr-3 text-sm w-64 sm:w-96 focus:outline-none rounded-2xl" />
+          <input type="search" name="search" onChange={handlerInput} value={search} placeholder="title:tokyo,tag:drama,..." className="border border-gray-300 bg-white h-10 pl-12 pr-3 text-sm w-64 sm:w-96 focus:outline-none rounded-2xl" />
         </div>
       </form>
     </div>

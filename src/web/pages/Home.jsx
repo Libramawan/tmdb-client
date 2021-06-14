@@ -10,6 +10,15 @@ function Home() {
             <h1 className="text-cyan text-9xl">TMDB</h1>
             <h2 className="text-white text-3xl">TV MOVIE Database</h2>
             <Search />
+            <div className="text-white text-xs pt-2 text-center quicksand">
+              <p>
+                Sintaks pencarian [prefix:input].
+              </p>
+              <p>
+                Prefix yang tersedia:
+                title, season, status, type, year, tag, synonym
+              </p>
+            </div>
           </div>
         </div>
       </div>
